@@ -4,4 +4,29 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:MultiGame">
 
+    <Application.Resources>
+        <ResourceDictionary>
+            
+            <ResourceDictionary.ThemeDictionaries>
+                <ResourceDictionary x:Key="Light">
+                    <ResourceDictionary Source="Themes/Light/ThemeResources.xaml"/>
+                </ResourceDictionary>
+                <ResourceDictionary x:Key="Dark">
+                    <ResourceDictionary Source="Themes/Dark/ThemeResources.xaml"/>
+                </ResourceDictionary>
+                <ResourceDictionary x:Key="HighContrast">
+                    <ResourceDictionary Source="Themes/HighContrast/ThemeResources.xaml"/>
+                </ResourceDictionary>
+            </ResourceDictionary.ThemeDictionaries>
+
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Themes/Colors.xaml"/>
+                <ResourceDictionary Source="Themes/Light/ThemeResources.xaml"/>
+                <ResourceDictionary Source="Themes/Dark/ThemeResources.xaml"/>
+                <ResourceDictionary Source="Themes/HighContrast/ThemeResources.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            
+        </ResourceDictionary>
+    </Application.Resources>
+
 </Application>
