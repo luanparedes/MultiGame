@@ -8,7 +8,7 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-        <TextBlock Text="Primeiro texto!" Foreground="Blue" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Grid Background="{ThemeResource AppBackground}">
+        <TextBlock Text="Primeiro texto!" Foreground="{ThemeResource AppForeground}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
     </Grid>
 </Page>
